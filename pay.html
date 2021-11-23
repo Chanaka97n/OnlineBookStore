@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Online Book Store</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="css/home.css" rel="stylesheet" type="text/css">
+    <link href="css/pay.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" >
+</head>
+<body>
+
+    <header>
+        <div class="title">
+            <a href="main.html"?>
+            <img class="logo" src="images/banner7.png" alt="logo" />
+            </a>
+            <a href="checkout.html" class="btn btn-info btn-lg">
+            <span class="glyphicon glyphicon-shopping-cart"></span> Checkout
+            </a>
+        </div>
+         
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li><a href="main.html">Home</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+          <form class="navbar-form navbar-left" action="#">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" name="search">
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="submit">
+                <i class="glyphicon glyphicon-search"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="register.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+    
+    <div class="container3">
+    <div class="row">
+        <form class="confirm" action="#" onsubmit="return validateForm()" method="post" name="confirm" id="confirm" >        
+        <div class="well col-xs-10 col-sm-10 col-md-6 col-xs-offset-1 col-sm-offset-1 col-md-offset-3">
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <address>
+                        <strong>A New Chapter</strong>
+                        <br>
+                        #50, Peradeniya Road
+                        <br>
+                        Kandy, SriLanka
+                        <br>
+                        <abbr title="Phone">P:</abbr> +94 123456789
+                    </address>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 text-right">
+                    <p>
+                        <em id="dat"></em>
+                    </p>
+                    <script>
+var d = new Date();
+document.getElementById("dat").innerHTML = d;
+</script>
+                    <p>
+                        <em>Receipt #: 18671871R</em>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-center">
+                    <h1>Receipt</h1>
+                </div>
+                </span>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Book</th>
+                            <th>#</th>
+                            <th class="text-center">Price</th>
+                            <th class="text-center">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="col-md-9"><em>Waiter Isaacson - Steve jobs</em></h4></td>
+                            <td class="col-md-1" style="text-align: center"> 1 </td>
+                            <td class="col-md-1 text-center">$9.72</td>
+                            <td class="col-md-1 text-center">$9.72</td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-9"><em>There There - Tommy Orange</em></h4></td>
+                            <td class="col-md-1" style="text-align: center"> 1 </td>
+                            <td class="col-md-1 text-center">$14</td>
+                            <td class="col-md-1 text-center">$14</td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-9"><em>Brother - David Chariandy</em></h4></td>
+                            <td class="col-md-1" style="text-align: center"> 1 </td>
+                            <td class="col-md-1 text-center">$15.48</td>
+                            <td class="col-md-1 text-center">$15.48</td>
+                        </tr>
+                        <tr>
+                            <td>   </td>
+                            <td>   </td>
+                            <td class="text-right">
+                            <p>
+                                <strong>Subtotal: </strong>
+                            </p>
+                            <p>
+                                <strong>Tax: </strong>
+                            </p></td>
+                            <td class="text-center">
+                            <p>
+                                <strong>$39.2</strong>
+                            </p>
+                            <p>
+                                <strong>$3.12</strong>
+                            </p></td>
+                        </tr>
+                        <tr>
+                            <td>   </td>
+                            <td>   </td>
+                            <td class="text-right"><h4><strong>Total: </strong></h4></td>
+                            <td class="text-center text-danger"><h4><strong>$42.32</strong></h4></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="submit" class="btn btn-success btn-lg btn-block">
+                    Pay Now   <span class="glyphicon glyphicon-chevron-right"></span>
+                </button></td>
+            </div>
+        </div>
+    </div>
+</form>
+    
+ <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 footer-col">
+        <div class="logofooter">A NEW CHAPTER</div>
+        <p>A group of web developers and an enthusiastic bookworm teamed up in 2017 and decided to make an online bookstore to make it convenient for people to get their favorite books. What started as a hobby turned out to be one of the most visited online bookstores of 2018 and now New Chapter has started expanding it's business by opening up shops in certain locations and will attract more customers as the physical copy will always have an influence over a simple PDF. To learn more about us and the people working behind the scenes visit the about us page.</p>
+       
+      </div>
+      <div class="col-md-3 col-sm-6 footer-col">
+        <h6 class="heading7">General links</h6>
+        <ul class="footer-ul">
+          <li><a href="#" onclick="return false;"> Offers</a></li>
+          <li><a href="#" onclick="return false;"> Privacy Policy</a></li>
+          <li><a href="#" onclick="return false;"> Terms & Conditions</a></li>
+          <li><a href="#" onclick="return false;"> Giveaways</a></li>
+          <li><a href="#" onclick="return false;"> Frequently Asked Questions</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-6 footer-col">
+        <h6 class="heading7">Contact Us</h6>
+        <div class="post">
+     <p><i class="fa fa-map-pin"></i> #50, Peradeniya Road, Kandy, SriLanka</p>
+        <p><i class="fa fa-phone"></i> Phone (SriLanka) : +94 123456789</p>
+            <p><i class="fa fa-envelope"></i> E-mail : groupd@sliit.lk</p>
+            <p>or visit our contact us page for more information.</p>
+        
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 footer-col">
+        <h6 class="heading7">Social Media</h6>
+        <ul class="footer-social">
+          <li><a href="https://www.facebook.com" target="_blank" ><i class="fa fa-facebook social-icon facebook" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.twitter.com" target="_blank" ><i class="fa fa-twitter social-icon twitter" aria-hidden="true"></i></a></li>
+          <li><a href="https://plus.google.com" target="_blank" ><i class="fa fa-google-plus social-icon google" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="copyright">
+  <div class="container">
+    <div class="col-md-6">
+      <p>Copyright © 2018 - Group D</p>
+    </div>
+    <div class="col-md-6">
+      <ul class="bottom_ul">
+        <li><a href="main.html">Home</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>
